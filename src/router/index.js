@@ -26,6 +26,21 @@ const routes = [
     path: '/ajouterProjet',
     name: 'ajouterprojet',
     component: () => import('../components/AjoutProjet.vue')
+  },
+  {
+    path: '/ajouterTache',
+    name: 'ajoutertache',
+    component: () => import('../components/AjoutTache.vue')
+  },
+  {
+    path: '/listProjets',
+    name: 'listprojet',
+    component: () => import('../components/ListeProjet.vue')
+  },
+  {
+    path: '/listTaches',
+    name: 'listtache',
+    component: () => import('../components/ListeTache.vue')
   }
 ]
 

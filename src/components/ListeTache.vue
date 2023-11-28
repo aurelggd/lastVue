@@ -1,5 +1,5 @@
 <template>
-    <div class="listprojet">
+    <div class="listtaches">
         <h1> PROJETS DISPONIBLES </h1>
 
         <table>
