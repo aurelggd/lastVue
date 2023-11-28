@@ -2,12 +2,16 @@
 <div class="body">
   <div class="profil">
         <h1> UTILISATEUR CONNECTÉ </h1>
+        <button @click="disconnect"> Deconnexion </button>
 
         <p> Prénom : {{ utilisateur_actuel.prenom }} </p>
         <p> Nom : {{ utilisateur_actuel.nom }} </p>
         <p> Mail : {{ utilisateur_actuel.email }} </p>
 
-        <button @click="disconnect"> Deconnexion </button>
+        <router-link to="/about"> Créer un nouveau projet </router-link>
+        <router-link to="/auth"> Créer une nouvelle tâche </router-link>
+        <router-link to="/auth"> Liste des projets </router-link>
+        <router-link to="/auth"> Liste des tâches </router-link>
     </div>
 </div>
 </template>
@@ -68,4 +72,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    background-color: grey;
+    margin-top: 30px;
+}
 </style>
