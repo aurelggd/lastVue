@@ -9,7 +9,7 @@
 
             <button @click="disconnect"> Deconnexion </button>
         </div>
-        <div class="routes">
+        <div class="routes"> iozrjfpz
             <router-link to="/ajouterProjet"> Créer un nouveau projet </router-link>
             <router-link to="/ajouterTache"> Créer une nouvelle tâche </router-link>
             <router-link to="/listProjets"> Liste des projets </router-link>
