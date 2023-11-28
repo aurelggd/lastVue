@@ -35,7 +35,9 @@
     align-items: center;
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
-    background: skyblue;
+    background: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
   }
 
   .main{

@@ -33,6 +33,8 @@ const personnes = [
 <style scoped>
 .about {
   margin: 50px 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }
 
 .about h1 {
