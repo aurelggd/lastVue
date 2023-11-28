@@ -23,7 +23,7 @@
 const utilisateur_actuel = { nom: "Doe", prenom: "John", email: "john.doe@example.com" };
 
 const disconnect = () => {
-    alert("Disconnect user")
+    alert("You will be disconnected")
 }
 
 </script>
@@ -39,11 +39,15 @@ p {
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
     background: skyblue;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 5% 25% 15% 25%;
 }
 
 .profil {
     width: 350px;
-    height: fit-content;
+    height: 400px;
     overflow: hidden;
     background: url("../assets/5968949.jpg") no-repeat center / cover;
     border-radius: 10px;
@@ -71,14 +75,22 @@ button {
 }
 
 .routes {
-    margin: 50px;
+    /*margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    width: 350px;
+    height: fit-content;
+    overflow: hidden;
+    background: url("../assets/5968949.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px #000;
+    margin: auto;
+    padding: auto;
+
 }
 .routes a {
     text-decoration: none;
     border: 1px solid #ccc;
-    background-color: grey;
     padding: 20px;
     display: block;
 }

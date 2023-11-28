@@ -53,11 +53,17 @@ h1 {
     margin: 30px 0px;
 }
 form {
-    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    background: skyblue;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px #000;
     margin: auto;
-    padding: 40px 30px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 5px 8px;
+    padding: auto;
+    padding-top: 11px;
 }
 label {
     display: block;
@@ -71,6 +77,15 @@ input, textarea {
     border-radius: 5px;
 }
 button {
+    padding: 20px;
+    width: 400px;
+    outline: none;
+    margin: 10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#etat{
     padding: 20px;
     width: 400px;
     outline: none;

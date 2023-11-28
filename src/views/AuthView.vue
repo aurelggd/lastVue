@@ -30,7 +30,7 @@
 import router from '@/router';
 
 const redirect_path = () => {
-  alert("dd")
+  alert("You will be redirect to the management dashboard")
 
   // normalement apres verification ... 
   router.push({ name: 'profil', params: { username: 'eduardo' } })

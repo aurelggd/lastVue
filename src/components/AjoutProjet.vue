@@ -50,7 +50,7 @@ form {
     padding: 40px 30px;
     border: 1px solid #ccc;
     box-shadow: 2px 5px 8px;
-    background: rgb(175, 173, 232);
+    background: skyblue;
     border-radius: 10px;
 }
 label {
