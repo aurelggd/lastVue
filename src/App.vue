@@ -4,6 +4,7 @@
       <img alt="Vue logo" src="./assets/logoProjetVue.png">
     </div>
     <div class="routes">
+      <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/auth">Authentication</router-link>
     </div>
