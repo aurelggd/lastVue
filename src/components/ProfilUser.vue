@@ -26,4 +26,12 @@ h1 {
   margin: 60px 0px;
 }
 
+button {
+    padding: 20px;
+    margin: 30px 0px;
+    background-color: rgb(235, 25, 25);
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
 </style>

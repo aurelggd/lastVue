@@ -1,31 +1,31 @@
 <template>
-    <div class="ajoutprojet">
+    <div class="ajouttache">
 
         <h1>Création de Tâches</h1>
 
-        <!-- Formulaire de création de projet -->
+        <!-- Formulaire de création de tache -->
         <form @submit.prevent="ajouterTache()">
             <label for="titre">Titre de la tâche :</label>
-            <input type="text" id="titre" v-model="newProject.titre_projet" required>
+            <input type="text" id="titre" v-model="newTache.titre_tache" required>
 
             <label for="description">Description de la tâche :</label>
-            <textarea id="description" v-model="newProject.description_projet" required></textarea>
+            <textarea id="description" v-model="newTache.description_tache" required></textarea>
 
             <label for="etat">Etat de la tâche :</label>
-            <select id="etat">, , 
+            <select id="etat" v-model="newTache.etat">
                 <option value="pas_encore">Pas encore commencée</option>
                 <option value="en_cours">En cours</option>
                 <option value="complete">Complétée</option>
             </select>
 
             <label for="dateDebut">Date de debut la tâche :</label>
-            <input type="date" id="dateDebut" v-model="newProject.date_debut_projet" required>
+            <input type="date" id="dateDebut" v-model="newTache.date_debut_tache" required>
 
             <label for="deadline">Date de fin la tâche::</label>
-            <input type="date" id="deadline" v-model="newProject.deadline_projet" required>
+            <input type="date" id="deadline" v-model="newTache.deadline_tache" required>
 
             <br><br>
-            <button type="submit">Ajouter Projet</button>
+            <button type="submit">Ajouter Tâche</button>
         </form>
 
     </div>
@@ -34,16 +34,17 @@
 <script setup>
 import { ref } from 'vue';
 
-const newProject = ref({
-  titre_projet: '',
-  description_projet: '',
-  date_debut_projet: '',
-  deadline_projet: ''
+const newTache = ref({
+  titre_tache: '',
+  etat: '',
+  description_tache: '',
+  date_debut_tache: '',
+  deadline_tache: ''
 });
 
-console.log(newProject.value)
+console.log(newTache.value)
 
-// envoyer newProject dans la base de donnée
+// envoyer newTache dans la base de donnée
 
 </script>
 
