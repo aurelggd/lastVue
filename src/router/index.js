@@ -16,6 +16,16 @@ const routes = [
     path: '/auth',
     name: 'auth',
     component: () => import('../views/AuthView.vue')
+  },
+  {
+    path: '/profil',
+    name: 'profil',
+    component: () => import('../components/ProfilUser.vue')
+  },
+  {
+    path: '/ajouterProjet',
+    name: 'ajouterprojet',
+    component: () => import('../components/AjoutProjet.vue')
   }
 ]
 
