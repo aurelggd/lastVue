@@ -45,11 +45,13 @@ h1 {
     margin: 30px 0px;
 }
 form {
-    width: 40%;
+    width: 25%;
     margin: auto;
     padding: 40px 30px;
     border: 1px solid #ccc;
     box-shadow: 2px 5px 8px;
+    background: rgb(175, 173, 232);
+    border-radius: 10px;
 }
 label {
     display: block;
