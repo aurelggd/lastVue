@@ -1,5 +1,6 @@
 <template>
-    <div class="profil">
+<div class="body">
+  <div class="profil">
         <h1> UTILISATEUR CONNECTÉ </h1>
         <button @click="disconnect"> Deconnexion </button>
 
@@ -12,6 +13,7 @@
         <router-link to="/auth"> Liste des projets </router-link>
         <router-link to="/auth"> Liste des tâches </router-link>
     </div>
+</div>
 </template>
 
 <script setup>
@@ -24,15 +26,49 @@ const disconnect = () => {
 </script>
 
 <style scoped>
+
+p{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+  .body{
+    margin: 0;
+    padding: 0 0 220px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: skyblue;
+  }
+
+  .profil{
+    width: 350px;
+    height: 375px;
+    background: red;
+    overflow: hidden;
+    background: url("../assets/5968949.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    margin: auto;
+    padding: auto;
+  }
+
+
 h1 {
-    margin: 60px 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin: 60px 0px;
 }
 
 button {
     padding: 20px;
     margin: 30px 0px;
-    background-color: rgb(235, 25, 25);
-    border: 1px solid #ccc;
+    background-color: skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
     cursor: pointer;
 }
 
