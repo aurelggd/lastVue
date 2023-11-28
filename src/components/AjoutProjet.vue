@@ -17,6 +17,7 @@
             <label for="deadline">Deadline:</label>
             <input type="date" id="deadline" v-model="newProject.deadline_projet" required>
 
+            <br><br>
             <button type="submit">Ajouter Projet</button>
         </form>
 
@@ -39,9 +40,30 @@ console.log(newProject.value)
 
 </script>
 
-<style>
+<style scoped>
+form {
+    width: 40%;
+    margin: auto;
+    padding: 40px 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 5px 8px;
+}
 label {
     display: block;
+    margin: 5px 0px;
+}
+input, textarea {
+    width: 400px;
+    outline: none;
+    padding: 20px;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 5px;
+}
+button {
+    padding: 20px;
+    width: 400px;
+    outline: none;
     margin: 10px 0px;
 }
+
 </style>

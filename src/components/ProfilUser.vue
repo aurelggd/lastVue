@@ -5,12 +5,18 @@
         <p> Prénom : {{ utilisateur_actuel.prenom }} </p>
         <p> Nom : {{ utilisateur_actuel.nom }} </p>
         <p> Mail : {{ utilisateur_actuel.email }} </p>
+
+        <button @click="disconnect"> Deconnexion </button>
     </div>
 </template>
 
 <script setup>
 
 const utilisateur_actuel = { nom: "Doe", prenom: "John", email: "john.doe@example.com" };
+
+const disconnect = () => {
+    alert("Disconnect user")
+}
 </script>
 
 <style scoped>
