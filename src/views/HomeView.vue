@@ -17,11 +17,6 @@ export default {
 </script>
 
 <style>
-  .logo{
-    width: 100px;
-    height: 100px;
-  }
-
   .home{
     padding: 0;
     margin: 0;
