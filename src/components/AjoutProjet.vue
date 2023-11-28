@@ -41,6 +41,9 @@ console.log(newProject.value)
 </script>
 
 <style scoped>
+h1 {
+    margin: 30px 0px;
+}
 form {
     width: 40%;
     margin: auto;
