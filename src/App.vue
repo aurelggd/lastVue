@@ -6,7 +6,10 @@
     <div class="routes">
       <router-link to="/about">About</router-link>
       <router-link to="/auth">Authentication</router-link>
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad2dacc5a4e7706f22368bda68a99ed157b629ef
     </div>
   </nav>
   <router-view/>
