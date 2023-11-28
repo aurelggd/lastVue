@@ -1,12 +1,16 @@
 <template>
     <div class="profil">
         <h1> UTILISATEUR CONNECTÉ </h1>
+        <button @click="disconnect"> Deconnexion </button>
 
         <p> Prénom : {{ utilisateur_actuel.prenom }} </p>
         <p> Nom : {{ utilisateur_actuel.nom }} </p>
         <p> Mail : {{ utilisateur_actuel.email }} </p>
 
-        <button @click="disconnect"> Deconnexion </button>
+        <router-link to="/about"> Créer un nouveau projet </router-link>
+        <router-link to="/auth"> Créer une nouvelle tâche </router-link>
+        <router-link to="/auth"> Liste des projets </router-link>
+        <router-link to="/auth"> Liste des tâches </router-link>
     </div>
 </template>
 
@@ -20,10 +24,8 @@ const disconnect = () => {
 </script>
 
 <style scoped>
-
-
 h1 {
-  margin: 60px 0px;
+    margin: 60px 0px;
 }
 
 button {
@@ -34,4 +36,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    background-color: grey;
+    margin-top: 30px;
+}
 </style>
