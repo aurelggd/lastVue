@@ -1,58 +1,133 @@
 <template>
-  <div>
-    <div class="main">
+  <div class="body">
+      <div class="main">
       <input type="checkbox" id="chk" aria-hidden="true">
 
       <div class="signup">
         <form>
           <label for="chk" aria-hidden="true">Sign Up</label>
+          <input type="text" name="txt" placeholder="User name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="pswd" placeholder="Password" required>
+          <button>Sign Up</button>
+
+        </form>
+      </div>
+
+      <div class="login">
+        <form>
+          <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="pswd" placeholder="Password" required>
+          <button>Login</button>
         </form>
       </div>
     </div>
+  </div>
   </template>
 
 <style scoped>
+  .body{
+    margin: 0;
+    padding: 0 0 220px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: skyblue;
+  }
 
-form {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
+  .main{
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url("../assets/imgProjet.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+  }
 
-h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
+  #chk{
+    display: none;
+  }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #555;
-}
+  .signup{
+    position:relative;
+    width: 100%;
+    height: 100%;
+  }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
 
-button:hover {
-  background-color: #0056b3;
-}
+  button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top:20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background: #6d44b8;
+  }
+
+  .login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+  }
+
+  .login label{
+    color: #573b8a;
+    transform: scale(.6);
+  }
+
+  #chk:checked ~ .login{
+    transform: translateY(-500px);
+  }
+
+  #chk:checked ~ .login label{
+    transform: scale(1);
+  }  
+
+  #chk:checked ~ .signup label{
+    transform: scale(.6);
+  }
+
+
 </style>
