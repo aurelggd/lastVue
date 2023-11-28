@@ -25,6 +25,7 @@ const utilisateur_actuel = { nom: "Doe", prenom: "John", email: "john.doe@exampl
 const disconnect = () => {
     alert("Disconnect user")
 }
+
 </script>
 
 <style scoped>
